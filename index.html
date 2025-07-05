@@ -1,97 +1,70 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>自建房设计图商店</title>
-  <style>
-    body { font-family: sans-serif; padding: 40px; background: #f5f5f5; }
-    h1 { text-align: center; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
-    .card {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      overflow: hidden;
-      padding: 16px;
-    }
-    .card img { width: 100%; height: auto; border-radius: 8px; }
-    .title { font-size: 1.1rem; font-weight: bold; margin: 12px 0 6px; }
-    .price { color: #d14; font-weight: bold; margin-bottom: 10px; }
-    .buy-button {
-      background-color: #0070f3;
-      color: white;
-      padding: 10px 16px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .buy-button:hover { background-color: #005bb5; }
-  </style>
+    <meta charset="UTF-8">
+    <title>自建住宅設計図ストア</title>
 </head>
-<body>
-  <h1>自建房设计图商店</h1>
-  <div class="grid">
-
-    <!-- 产品卡片示例 -->
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331754-469793f9-92be-4204-861f-03d7b71dbdc4.jpg" alt="产品1">
-      <div class="title">三层欧式现代风</div>
-      <div class="price">¥9980 日元</div>
-      <a href="#paddle_buy_1" class="buy-button">购买</a>
+<body style="font-family:sans-serif; background:#f5f5f5; margin:0; padding:0;">
+    <h1 style="text-align:center; padding:20px;">自建住宅設計図ストア</h1>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center;">
+        
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-1-3.jpg" alt="三階建て欧風デザイン" style="width:100%; border-radius:8px;">
+        <h3>三階建て欧風デザイン</h3>
+        <p style="color:#e53935; font-weight:bold;">¥19980 円</p>
+        <a href="#paddle_buy_1" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331755-05d90635-f92a-4593-8b7f-c7e158db6241.jpg" alt="产品2">
-      <div class="title">三层新中式设计</div>
-      <div class="price">¥10800 日元</div>
-      <a href="#paddle_buy_2" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-2-3.jpg" alt="三階建て新中式設計" style="width:100%; border-radius:8px;">
+        <h3>三階建て新中式設計</h3>
+        <p style="color:#e53935; font-weight:bold;">¥10800 円</p>
+        <a href="#paddle_buy_2" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331756-2bda3a17-2aa6-4d6d-84e0-6a265f709f08.jpg" alt="产品3">
-      <div class="title">二层简欧庭院房</div>
-      <div class="price">¥11800 日元</div>
-      <a href="#paddle_buy_3" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-3-4.jpg" alt="二階建て欧風邸宅" style="width:100%; border-radius:8px;">
+        <h3>二階建て欧風邸宅</h3>
+        <p style="color:#e53935; font-weight:bold;">¥11800 円</p>
+        <a href="#paddle_buy_3" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331757-4cf3c250-7cf0-41df-b94d-0a994c7869b6.jpg" alt="产品4">
-      <div class="title">三层轻奢现代风</div>
-      <div class="price">¥13800 日元</div>
-      <a href="#paddle_buy_4" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-4-3.5.jpg" alt="三階建てモダン邸宅" style="width:100%; border-radius:8px;">
+        <h3>三階建てモダン邸宅</h3>
+        <p style="color:#e53935; font-weight:bold;">¥13800 円</p>
+        <a href="#paddle_buy_4" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331758-f9fa2ff7-cc9f-46d4-8ec7-16a231f48fe6.jpg" alt="产品5">
-      <div class="title">二层中式四合院</div>
-      <div class="price">¥10800 日元</div>
-      <a href="#paddle_buy_5" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-5-2.jpg" alt="二階建て中式四合院" style="width:100%; border-radius:8px;">
+        <h3>二階建て中式四合院</h3>
+        <p style="color:#e53935; font-weight:bold;">¥10800 円</p>
+        <a href="#paddle_buy_5" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331759-0e1a2e83-846b-4b59-b837-e0b994d3c296.jpg" alt="产品6">
-      <div class="title">三层双阳台设计</div>
-      <div class="price">¥12800 日元</div>
-      <a href="#paddle_buy_6" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-6-3.jpg" alt="三階建て屋上テラス付き" style="width:100%; border-radius:8px;">
+        <h3>三階建て屋上テラス付き</h3>
+        <p style="color:#e53935; font-weight:bold;">¥12800 円</p>
+        <a href="#paddle_buy_6" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331760-1a79f5e6-9c63-4708-b5eb-91eec4f85c8e.jpg" alt="产品7">
-      <div class="title">两层坡顶别墅</div>
-      <div class="price">¥9980 日元</div>
-      <a href="#paddle_buy_7" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-7-2.jpg" alt="二階建てガラス屋根住宅" style="width:100%; border-radius:8px;">
+        <h3>二階建てガラス屋根住宅</h3>
+        <p style="color:#e53935; font-weight:bold;">¥9980 円</p>
+        <a href="#paddle_buy_7" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-    <div class="card">
-      <img src="https://user-images.githubusercontent.com/211337863/275331761-84a399ae-b3ec-4f7f-881e-c3c93889c0ce.jpg" alt="产品8">
-      <div class="title">两层对称美宅</div>
-      <div class="price">¥10980 日元</div>
-      <a href="#paddle_buy_8" class="buy-button">购买</a>
+    
+    <div style="border:1px solid #ddd; border-radius:10px; padding:10px; width:250px; margin:10px; box-shadow:2px 2px 5px #ccc;">
+        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-8-2.5.jpg" alt="二階建て対称デザイン住宅" style="width:100%; border-radius:8px;">
+        <h3>二階建て対称デザイン住宅</h3>
+        <p style="color:#e53935; font-weight:bold;">¥16980 円</p>
+        <a href="#paddle_buy_8" style="display:inline-block; background:#1976d2; color:white; padding:8px 16px; border-radius:5px; text-decoration:none;">購入</a>
     </div>
-
-  </div>
+    
+    </div>
 </body>
 </html>
