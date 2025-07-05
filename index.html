@@ -1,99 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>自建房设计图商城</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自建房设计图商店</title>
   <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-    }
-    main {
-      padding: 2rem;
-      max-width: 960px;
-      margin: auto;
-    }
-    .product {
+    body { font-family: sans-serif; padding: 40px; background: #f5f5f5; }
+    h1 { text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px; }
+    .card {
       background: white;
-      border-radius: 8px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       overflow: hidden;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 16px;
     }
-    .product img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .product-content {
-      padding: 1rem;
-    }
-    .product-content h2 {
-      margin-top: 0;
-    }
-    .product-content p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-    .product-content .price {
-      color: #e74c3c;
-      font-size: 1.2rem;
-      margin: 1rem 0;
-    }
-    .btn {
-      display: inline-block;
-      background: #3498db;
+    .card img { width: 100%; height: auto; border-radius: 8px; }
+    .title { font-size: 1.1rem; font-weight: bold; margin: 12px 0 6px; }
+    .price { color: #d14; font-weight: bold; margin-bottom: 10px; }
+    .buy-button {
+      background-color: #0070f3;
       color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 4px;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
       text-decoration: none;
+      display: inline-block;
     }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #999;
-    }
+    .buy-button:hover { background-color: #005bb5; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Fighter0110 自建房设计图商城</h1>
-    <p>高性价比原创设计图 · 一次购买永久免费</p>
-  </header>
-  <main>
-    <div class="product">
-      <img src="https://raw.githubusercontent.com/Fighter0110/edd-demo-site/main/house1.png" alt="两层自建房设计图">
-      <div class="product-content">
-        <h2>两层现代中式设计图</h2>
-        <p>典雅实用，适合农村宅基地建房，占地约120㎡，附带施工结构图。</p>
-        <div class="price">¥129.00</div>
-        <a href="#" class="btn">立即购买</a>
-      </div>
+  <h1>自建房设计图商店</h1>
+  <div class="grid">
+
+    <!-- 产品卡片示例 -->
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331754-469793f9-92be-4204-861f-03d7b71dbdc4.jpg" alt="产品1">
+      <div class="title">三层欧式现代风</div>
+      <div class="price">¥9980 日元</div>
+      <a href="#paddle_buy_1" class="buy-button">购买</a>
     </div>
-    
-    <div class="product">
-      <img src="https://raw.githubusercontent.com/Fighter0110/edd-demo-site/main/house2.png" alt="三层带露台设计图">
-      <div class="product-content">
-        <h2>三层简约现代设计图</h2>
-        <p>带大露台与车库，现代极简风格，适合城市郊区宅基地建设。</p>
-        <div class="price">¥199.00</div>
-        <a href="#" class="btn">立即购买</a>
-      </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331755-05d90635-f92a-4593-8b7f-c7e158db6241.jpg" alt="产品2">
+      <div class="title">三层新中式设计</div>
+      <div class="price">¥10800 日元</div>
+      <a href="#paddle_buy_2" class="buy-button">购买</a>
     </div>
-  </main>
-  <footer>
-    &copy; 2025 Fighter0110. All rights reserved.
-  </footer>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331756-2bda3a17-2aa6-4d6d-84e0-6a265f709f08.jpg" alt="产品3">
+      <div class="title">二层简欧庭院房</div>
+      <div class="price">¥11800 日元</div>
+      <a href="#paddle_buy_3" class="buy-button">购买</a>
+    </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331757-4cf3c250-7cf0-41df-b94d-0a994c7869b6.jpg" alt="产品4">
+      <div class="title">三层轻奢现代风</div>
+      <div class="price">¥13800 日元</div>
+      <a href="#paddle_buy_4" class="buy-button">购买</a>
+    </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331758-f9fa2ff7-cc9f-46d4-8ec7-16a231f48fe6.jpg" alt="产品5">
+      <div class="title">二层中式四合院</div>
+      <div class="price">¥10800 日元</div>
+      <a href="#paddle_buy_5" class="buy-button">购买</a>
+    </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331759-0e1a2e83-846b-4b59-b837-e0b994d3c296.jpg" alt="产品6">
+      <div class="title">三层双阳台设计</div>
+      <div class="price">¥12800 日元</div>
+      <a href="#paddle_buy_6" class="buy-button">购买</a>
+    </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331760-1a79f5e6-9c63-4708-b5eb-91eec4f85c8e.jpg" alt="产品7">
+      <div class="title">两层坡顶别墅</div>
+      <div class="price">¥9980 日元</div>
+      <a href="#paddle_buy_7" class="buy-button">购买</a>
+    </div>
+
+    <div class="card">
+      <img src="https://user-images.githubusercontent.com/211337863/275331761-84a399ae-b3ec-4f7f-881e-c3c93889c0ce.jpg" alt="产品8">
+      <div class="title">两层对称美宅</div>
+      <div class="price">¥10980 日元</div>
+      <a href="#paddle_buy_8" class="buy-button">购买</a>
+    </div>
+
+  </div>
 </body>
 </html>
