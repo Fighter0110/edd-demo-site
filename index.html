@@ -1,133 +1,82 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>自建住宅設計図ストア</title>
-    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-    <script>
-        Paddle.Environment.set('production');
-        Paddle.Setup({ vendor:"239261"});
-    </script>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        h1 {
-            text-align: center;
-            margin-top: 40px;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .card {
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            margin: 10px;
-            width: 260px;
-            text-align: center;
-            padding: 10px;
-        }
-        .card img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 6px;
-        }
-        .title {
-            font-size: 18px;
-            margin: 10px 0 5px;
-        }
-        .price {
-            color: #e91e63;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        .paddle_button {
-            background: #1976d2;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>自建住宅設計図ストア</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+  <script>
+    Paddle.Environment.set('production');
+    Paddle.Setup({ vendor: "239261" });
+  </script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .card {
+      max-width: 400px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .title {
+      font-size: 20px;
+      margin: 15px 0 10px;
+    }
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+    .paddle_button {
+      background: #1976d2;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 20px;
+      background: #f0f0f0;
+    }
+  </style>
 </head>
 <body>
-    <h1>自建住宅設計図ストア</h1>
-    <div class="container">
-        
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-1-3.jpg" alt="三階建て欧風デザイン">
-        <div class="title">三階建て欧風デザイン</div>
-        <div class="price">¥19980 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd2nkayddp2m5akbd4kbgkm\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-2-3.jpg" alt="三階建て新中式設計">
-        <div class="title">三階建て新中式設計</div>
-        <div class="price">¥10800 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd2xyzwebwjp0bgdw7ymp7a\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-3-4.jpg" alt="二階建て欧風邸宅">
-        <div class="title">二階建て欧風邸宅</div>
-        <div class="price">¥11800 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd31hbv3rcr25kkx06ez75v\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-4-3.5.jpg" alt="三階建てモダン邸宅">
-        <div class="title">三階建てモダン邸宅</div>
-        <div class="price">¥13800 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd34tk4zhvk563a5a8gn9h4\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-5-2.jpg" alt="二階建て中式四合院">
-        <div class="title">二階建て中式四合院</div>
-        <div class="price">¥10800 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd380tnw026sfdtk688hyyy\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-6-3.jpg" alt="三階建て屋上テラス付き">
-        <div class="title">三階建て屋上テラス付き</div>
-        <div class="price">¥12800 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd3b81jt5ccg8aam591g9dj\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-7-2.jpg" alt="二階建てガラス屋根住宅">
-        <div class="title">二階建てガラス屋根住宅</div>
-        <div class="price">¥9980 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd3ekdr6n95kb82mkxgbdf4\" }}">購入</button>
-    </div>
-    
-    <div class="card">
-        <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-8-2.5.jpg" alt="二階建て対称デザイン住宅">
-        <div class="title">二階建て対称デザイン住宅</div>
-        <div class="price">¥16980 円</div>
-        <button class="paddle_button" data-theme="none" data-override="{{ \"productId\": \"pri_01jzd3hnrr3tpe3zwwkm5436j2\" }}">購入</button>
-    </div>
-    
-    </div>
-    <footer style="text-align:center; font-size:14px; padding:20px;">
+  <h1>自建住宅設計図ストア</h1>
+
+  <div class="card">
+    <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-8-2.5.jpg" alt="二階建て対称デザイン住宅">
+    <div class="title">二階建て対称デザイン住宅</div>
+    <div class="price">¥16,980 円</div>
+    <a href="https://pay.paddle.com/checkout/pri_01jzhc2q952h24bgmr1e3czsbh" class="paddle_button">購入する</a>
+  </div>
+
+  <footer>
     <a href="/terms.html">利用規約</a> |
     <a href="/privacy.html">プライバシーポリシー</a> |
     <a href="/refund.html">返品ポリシー</a>
+    <br><br>
+    販売事業者：JP-Verify建築設計事務所 ｜ お問い合わせ：yourmail@gmail.com
   </footer>
-    <p style="text-align:center; font-size:13px; color:gray;">
-  販売事業者：JP-Verify建築設計事務所 ｜ お問い合わせ：yourmail@gmail.com
-</p>
 </body>
 </html>
