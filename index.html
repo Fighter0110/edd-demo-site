@@ -1,113 +1,142 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villa Design Blueprints</title>
-    <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-    <script>
-        Paddle.Setup({ vendor: YOUR_VENDOR_ID });
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            padding: 16px;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            border-radius: 4px;
-        }
-        .card h2 {
-            font-size: 18px;
-            margin: 10px 0 5px;
-        }
-        .card p {
-            font-size: 14px;
-            color: #555;
-        }
-        .price {
-            font-size: 16px;
-            font-weight: bold;
-            color: green;
-            margin: 8px 0;
-        }
-        .paddle_button {
-            padding: 10px 20px;
-            background-color: #0070f3;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Villa Design Blueprints</title>
+  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
+  <script>
+    Paddle.Setup({ vendor: YOUR_VENDOR_ID });  // <-- 请替换为你的 Vendor ID
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      justify-content: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 16px;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin: 10px 0 5px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .price {
+      font-size: 16px;
+      font-weight: bold;
+      color: green;
+      margin: 8px 0;
+    }
+
+    .paddle_button {
+      padding: 10px 20px;
+      background-color: #0070f3;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Popular 2-3 Story Villa Design Blueprints</h1>
-    <div class="container">
-        <div class="card">
-            <img src="Wooden12.jpg" alt="Villa 1">
-            <h2>Elevated 2-Story Wooden Courtyard Villa | 13.2m × 12.9m</h2>
-            <div class="price">$270</div>
-            <p>Includes: Full architectural, structural, electrical & plumbing drawings. Designed for humid areas and sloped terrain.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w592rdv2hppb4dcw67878n">Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="Dual-Pitched13.jpg" alt="Villa 2">
-            <h2>Modern 2-Story Dual-Pitched Roof Villa | 12.1m × 12m</h2>
-            <div class="price">$180</div>
-            <p>Includes: Full floor plans, elevations, structure, electrical and plumbing drawings. Ideal for rural builds.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w55jkaa1ca4f3gqc6vt07r">Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="Garden14.jpg" alt="Villa 3">
-            <h2>Luxury 2-Story Garden Villa Design | 15.6m × 15.6m</h2>
-            <div class="price">$268</div>
-            <p>Includes: Floor plans, elevations, electrical & plumbing drawings. Perfect for scenic residential sites.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w50krx75rw8z2a4evwwyf6">Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="Small15.JPG" alt="Villa 4">
-            <h2>Classic 2-Story Small Villa House Design | 11m × 11m</h2>
-            <div class="price">$228</div>
-            <p>Includes: Floor plans, structure, water & electric system drawings. Ideal for compact family homes.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w4wq0v5xqyse9m6png9t3y">Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="American-Style21.jpg" alt="Villa 5">
-            <h2>Modern 2-Story American-Style House Design | Model N-11</h2>
-            <div class="price">$169</div>
-            <p>Includes: Floor plans, elevations, structural & electrical details. Classic symmetrical suburban home.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w4pkvkntrz24ang557k8jm">Buy Now</button>
-        </div>
-        <div class="card">
-            <img src="Courtyard01.JPG" alt="Villa 6">
-            <h2>Modern 3-Story Courtyard House Design | 194.94m²</h2>
-            <div class="price">$199</div>
-            <p>Includes: Floor plans (1F~3F), construction details, door/window schedule, electrical & plumbing drawings.</p>
-            <button class="paddle_button" data-theme="none" data-product="pri_01k0w2h26vnnjbksn1m7w90x3k">Buy Now</button>
-        </div>
+  <h1>Popular 2-3 Story Villa Design Blueprints</h1>
+
+  <div class="container">
+    <div class="card">
+      <img src="Wooden12.jpg" alt="Villa 1" />
+      <h2>Elevated 2-Story Wooden Courtyard Villa | 13.2m × 12.9m</h2>
+      <div class="price">$270</div>
+      <p>Includes: Full architectural, structural, electrical & plumbing drawings. Designed for humid areas and sloped terrain.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w592rdv2hppb4dcw67878n">Buy Now</button>
     </div>
+
+    <div class="card">
+      <img src="Dual-Pitched13.jpg" alt="Villa 2" />
+      <h2>Modern 2-Story Dual-Pitched Roof Villa | 12.1m × 12m</h2>
+      <div class="price">$180</div>
+      <p>Includes: Full floor plans, elevations, structure, electrical and plumbing drawings. Ideal for rural builds.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w55jkaa1ca4f3gqc6vt07r">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="Garden14.jpg" alt="Villa 3" />
+      <h2>Luxury 2-Story Garden Villa Design | 15.6m × 15.6m</h2>
+      <div class="price">$268</div>
+      <p>Includes: Floor plans, elevations, electrical & plumbing drawings. Perfect for scenic residential sites.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w50krx75rw8z2a4evwwyf6">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="Small15.JPG" alt="Villa 4" />
+      <h2>Classic 2-Story Small Villa House Design | 11m × 11m</h2>
+      <div class="price">$228</div>
+      <p>Includes: Floor plans, structure, water & electric system drawings. Ideal for compact family homes.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w4wq0v5xqyse9m6png9t3y">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="American-Style21.jpg" alt="Villa 5" />
+      <h2>Modern 2-Story American-Style House Design | Model N-11</h2>
+      <div class="price">$169</div>
+      <p>Includes: Floor plans, elevations, structural & electrical details. Classic symmetrical suburban home.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w4pkvkntrz24ang557k8jm">Buy Now</button>
+    </div>
+
+    <div class="card">
+      <img src="Courtyard01.JPG" alt="Villa 6" />
+      <h2>Modern 3-Story Courtyard House Design | 194.94m²</h2>
+      <div class="price">$199</div>
+      <p>Includes: Floor plans (1F~3F), construction details, door/window schedule, electrical & plumbing drawings.</p>
+      <button class="paddle_button" data-theme="none" data-product="pri_01k0w2h26vnnjbksn1m7w90x3k">Buy Now</button>
+    </div>
+  </div>
+
+  <footer>
+    <br><br>
+    <a href="/terms.html">利用規約</a> |
+    <a href="/privacy.html">プライバシーポリシー</a> |
+    <a href="/refund.html">返品ポリシー</a>
+    <br><br>
+    販売事業者: JP-Verify建築設計事務所【DigitalBuilding】 | お問い合わせ: my-mucui@outlook.com
+  </footer>
 </body>
 </html>
