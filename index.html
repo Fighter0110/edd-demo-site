@@ -1,82 +1,117 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>自建住宅設計図ストア</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.paddle.com/paddle/paddle.js"></script>
-  <script>
-    Paddle.Environment.set('production');
-    Paddle.Setup({ vendor: "239261" });
-  </script>
+  <title>Digital Building House Plans</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f9f9f9;
-      margin: 0;
-      padding: 0;
+      font-family: sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
     }
-    h1 {
-      text-align: center;
-      margin-top: 40px;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
     }
     .card {
-      max-width: 400px;
-      margin: 30px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
     .card img {
-      max-width: 100%;
-      border-radius: 6px;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
-    .title {
-      font-size: 20px;
-      margin: 15px 0 10px;
+    .card-body {
+      padding: 15px;
     }
-    .price {
-      color: #e91e63;
+    .card-body h3 {
+      font-size: 1.1rem;
+      margin: 0 0 10px;
+    }
+    .card-body p {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .card-body .price {
       font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-    .paddle_button {
-      background: #1976d2;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
+      color: #27ae60;
     }
     footer {
-      text-align: center;
-      font-size: 14px;
-      padding: 20px;
-      background: #f0f0f0;
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    footer a {
+      margin-right: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>自建住宅設計図ストア</h1>
-
-  <div class="card">
-    <img src="https://raw.githubusercontent.com/Fighter0110/image-hosting/main/1-8-2.5.jpg" alt="二階建て対称デザイン住宅">
-    <div class="title">二階建て対称デザイン住宅</div>
-    <div class="price">¥16,980 円</div>
-    <a href="https://pay.paddle.com/checkout/pri_01jzhc2q952h24bgmr1e3czsbh" class="paddle_button">購入する</a>
+  <h1>Popular 2-3 Story Villa Design Blueprints</h1>
+  <div class="container">
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/Wooden12.jpg" alt="Villa 1">
+      <div class="card-body">
+        <h3>Elevated 2-Story Wooden Courtyard Villa | 13.2m × 12.9m</h3>
+        <p class="price">$270</p>
+        <p>Includes: Full architectural, structural, electrical & plumbing drawings. Designed for humid areas and sloped terrain.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/Dual-Pitched13.jpg" alt="Villa 2">
+      <div class="card-body">
+        <h3>Modern 2-Story Dual-Pitched Roof Villa | 12.1m × 12m</h3>
+        <p class="price">$180</p>
+        <p>Includes: Full floor plans, elevations, structure, electrical and plumbing drawings. Ideal for rural builds.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/Garden14.jpg" alt="Villa 3">
+      <div class="card-body">
+        <h3>Luxury 2-Story Garden Villa Design | 15.6m × 15.6m</h3>
+        <p class="price">$268</p>
+        <p>Includes: Floor plans, elevations, electrical & plumbing drawings. Perfect for scenic residential sites.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/Small15.JPG" alt="Villa 4">
+      <div class="card-body">
+        <h3>Classic 2-Story Small Villa House Design | 11m × 11m</h3>
+        <p class="price">$228</p>
+        <p>Includes: Floor plans, elevation, structure, water & electric system drawings. Ideal for compact family homes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/American-Style21.jpg" alt="Villa 5">
+      <div class="card-body">
+        <h3>Modern 2-Story American-Style House Design | Model N-11</h3>
+        <p class="price">$169</p>
+        <p>Includes: Floor plans, elevations, structural & electrical details. Classic symmetrical suburban home.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://fighter0110.github.io/edd-demo-site/Courtyard01.JPG" alt="Villa 6">
+      <div class="card-body">
+        <h3>Modern 3-Story Courtyard House Design | 194.94m²</h3>
+        <p class="price">$199</p>
+        <p>Includes: Floor plans (1F–3F), construction details, door/window schedule, electrical & plumbing drawings.</p>
+      </div>
+    </div>
   </div>
 
   <footer>
     <a href="/terms.html">利用規約</a> |
     <a href="/privacy.html">プライバシーポリシー</a> |
-    <a href="/refund.html">返品ポリシー</a>
+    <a href="/refund.html">返金ポリシー</a>
     <br><br>
-    販売事業者：JP-Verify建築設計事務所【DigitalBuilding】 ｜ お問い合わせ：my-mucui@outlook.com
+    販売事業者: JP-Verify建築設計事務所 [DigitalBuilding] 　| 　お問い合わせ: my-mucui@outlook.com
   </footer>
 </body>
 </html>
